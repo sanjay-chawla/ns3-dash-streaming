@@ -37,6 +37,7 @@ build-dir/
 build/
 /.cproject
 /.project
+.project
 
 # Ignore traces
 .pcap
