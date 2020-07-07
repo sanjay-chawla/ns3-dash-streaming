@@ -8,7 +8,21 @@ The examples here are based on AMuSt framework
 ## Setup
 ### Option 1 (Preferred): Using your existing ns-3 setup i.e. you have the control over changes  
 1. Setup NS-3 and verify tests work before using this setup
-2. Setup AMuSt libdash and content folders. (TODO: Add example structure)
+2. Setup AMuSt libdash and content folders. 
+```shell
+source/
+├── AMuSt-libdash
+│   ├── ...
+├── content
+│   ├── mpds
+│   ├── representations
+│   ├── requests
+│   ├── scenario
+│   └── segments
+├── ns-3.30
+│   ├── ...
+├── [other ns3 installations e.g. pybindgen, netanim]
+```
 3. Copy the from this repo to NS-3 folder. *Carefully merge the wscript files*
 4. Configure for DASH usage
 ```shell
@@ -36,4 +50,5 @@ The scenarios are the desired configuration of setup and depends on the use case
 ## References
 
 1. Christian Kreuzberger, Daniel Posch, Hermann Hellwagner "AMuSt Framework - Adaptive Multimedia Streaming Simulation Framework for ns-3 and ndnSIM", https://github.com/ChristianKreuzberger/AMust-Simulator/
-2. https://github.com/haraldott/dash
+2. https://github.com/sassatelli/QoErouting
+3. https://github.com/haraldott/dash
